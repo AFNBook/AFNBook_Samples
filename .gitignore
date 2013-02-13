@@ -16,3 +16,6 @@ profile
 DerivedData
 .idea/
 xcuserdata
+
+Pods
+Podfile.lock
