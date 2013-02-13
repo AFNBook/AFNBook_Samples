@@ -7,6 +7,7 @@
 //
 
 #import "JMViewController.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface JMViewController ()
     @property (weak, nonatomic) IBOutlet UITextField *urlField;
@@ -26,24 +27,20 @@ NSString * const sampleURL = @"http://afnbook.herokuapp.com/date.php";
 }
 
 
+#pragma mark - Methods for request
+
 - (IBAction)requestWithNSURLConnectionDelegate {
-    assert(self.urlField.text.length > 3);
-    
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
-    NSURLConnection *con = [NSURLConnection connectionWithRequest:req delegate:self];
-    assert(con != nil);
-    
-    [self.urlField resignFirstResponder];
+    [NSURLConnection connectionWithRequest:req delegate:self];
 }
 
 - (IBAction)requestWithNSURLConnectionBlock:(id)sender {
-    assert(self.urlField.text.length > 3);
-    
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
 
     [NSURLConnection sendAsynchronousRequest:req
                                        queue:self.queue
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *errorConnection) {
+                               
                                if (!errorConnection){
                                    NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
                                    [self.webView loadHTMLString:responseString baseURL:nil];
@@ -51,30 +48,37 @@ NSString * const sampleURL = @"http://afnbook.herokuapp.com/date.php";
                                    NSString *errorString = errorConnection.localizedDescription;
                                    [self.webView loadHTMLString:errorString baseURL:nil];
                                }
+                               
                                [self.urlField resignFirstResponder];
+                               
                            }];
 }
 
 
 - (IBAction)requestWithAFN {
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSString *stringResponse = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        [self.webView loadHTMLString:stringResponse baseURL:nil];
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+       [self.webView loadHTMLString:error.localizedDescription baseURL:nil];
+        
+    }];
+    
+    [operation start];
+    
     [self.urlField resignFirstResponder];
 }
 
 
 #pragma mark - NSURLConnection delegate methods
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-    assert( [httpResponse isKindOfClass:[NSHTTPURLResponse class]] );
-    
-    NSLog(@"Status Code: %d", httpResponse.statusCode);
-    
-    if ((httpResponse.statusCode / 100) != 2) {
-        [self.webView loadHTMLString:[NSString stringWithFormat:@"HTTP error %zd", (ssize_t) httpResponse.statusCode] baseURL:nil];
-    } else {
-        NSLog(@"Content-Type: %@", httpResponse.MIMEType);
-        [self.webView loadHTMLString:@"Loading..." baseURL:nil];
-    }
-    
     self.data = [NSMutableData data];
 }
 
@@ -84,10 +88,12 @@ NSString * const sampleURL = @"http://afnbook.herokuapp.com/date.php";
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
     [self.webView loadHTMLString:error.localizedDescription baseURL:nil];
+    [self.urlField resignFirstResponder];
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
     NSString *responseString = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
     [self.webView loadHTMLString:responseString baseURL:nil];
+    [self.urlField resignFirstResponder];
 }
 @end
