@@ -13,18 +13,20 @@
     @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
     @property (strong, nonatomic) NSMutableData *data;
+    @property (strong, nonatomic) NSOperationQueue *queue;
 @end
 
 @implementation JMViewController
 
 NSString * const sampleURL = @"http://afnbook.herokuapp.com/date.php";
 - (void)viewDidLoad{
+    self.queue = [[NSOperationQueue alloc] init];
     self.urlField.text = sampleURL;
     [super viewDidLoad];
 }
 
 
-- (IBAction)requestWithNSURLConnection:(id)sender {
+- (IBAction)requestWithNSURLConnectionDelegate {
     assert(self.urlField.text.length > 3);
     
     NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
@@ -34,13 +36,32 @@ NSString * const sampleURL = @"http://afnbook.herokuapp.com/date.php";
     [self.urlField resignFirstResponder];
 }
 
+- (IBAction)requestWithNSURLConnectionBlock:(id)sender {
+    assert(self.urlField.text.length > 3);
+    
+    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
 
-- (IBAction)requestWithAFN:(id)sender {
+    [NSURLConnection sendAsynchronousRequest:req
+                                       queue:self.queue
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *errorConnection) {
+                               if (!errorConnection){
+                                   NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                                   [self.webView loadHTMLString:responseString baseURL:nil];
+                               }else{
+                                   NSString *errorString = errorConnection.localizedDescription;
+                                   [self.webView loadHTMLString:errorString baseURL:nil];
+                               }
+                               [self.urlField resignFirstResponder];
+                           }];
+}
+
+
+- (IBAction)requestWithAFN {
     [self.urlField resignFirstResponder];
 }
 
 
-#pragma mark - NSURLConnection methods
+#pragma mark - NSURLConnection delegate methods
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
     assert( [httpResponse isKindOfClass:[NSHTTPURLResponse class]] );
