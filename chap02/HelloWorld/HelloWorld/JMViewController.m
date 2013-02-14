@@ -30,46 +30,55 @@ NSString * const sampleURL = @"http://afnbook.herokuapp.com/date.php";
 #pragma mark - Methods for request
 
 - (IBAction)requestWithNSURLConnectionDelegate {
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
+    NSURL *url = [NSURL URLWithString:self.urlField.text];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+
     [NSURLConnection connectionWithRequest:req delegate:self];
 }
 
 - (IBAction)requestWithNSURLConnectionBlock:(id)sender {
-    NSURLRequest *req = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
+NSURL *url = [NSURL URLWithString:self.urlField.text];
+NSURLRequest *req = [NSURLRequest requestWithURL:url];
 
-    [NSURLConnection sendAsynchronousRequest:req
-                                       queue:self.queue
-                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *errorConnection) {
-                               
-                               if (!errorConnection){
-                                   NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                                   [self.webView loadHTMLString:responseString baseURL:nil];
-                               }else{
-                                   NSString *errorString = errorConnection.localizedDescription;
-                                   [self.webView loadHTMLString:errorString baseURL:nil];
-                               }
-                               
-                               [self.urlField resignFirstResponder];
-                               
-                           }];
+[NSURLConnection sendAsynchronousRequest:req queue:self.queue
+   completionHandler:^(NSURLResponse *response, NSData *data, NSError *errorConnection) {
+       
+       if (!errorConnection){
+           NSString *responseString = [[NSString alloc] initWithData:data
+                                                            encoding:NSUTF8StringEncoding];
+           [self.webView loadHTMLString:responseString baseURL:nil];
+       }else{
+           NSString *errorString = errorConnection.localizedDescription;
+           [self.webView loadHTMLString:errorString baseURL:nil];
+       }
+       
+       [self.urlField resignFirstResponder];
+       
+   } // completionHandler
+];
 }
 
 
 - (IBAction)requestWithAFN {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.urlField.text]];
+    NSURL *url = [NSURL URLWithString:self.urlField.text];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
     
-    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:req];
     
-    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [operation
+     setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        NSString *stringResponse = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSString *stringResponse = [[NSString alloc] initWithData:responseObject
+                                                         encoding:NSUTF8StringEncoding];
         [self.webView loadHTMLString:stringResponse baseURL:nil];
         
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    }   // successBlock
+     failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
        [self.webView loadHTMLString:error.localizedDescription baseURL:nil];
         
-    }];
+    }
+    ];
     
     [operation start];
     
@@ -92,7 +101,8 @@ NSString * const sampleURL = @"http://afnbook.herokuapp.com/date.php";
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    NSString *responseString = [[NSString alloc] initWithData:self.data encoding:NSUTF8StringEncoding];
+    NSString *responseString = [[NSString alloc] initWithData:self.data
+                                                     encoding:NSUTF8StringEncoding];
     [self.webView loadHTMLString:responseString baseURL:nil];
     [self.urlField resignFirstResponder];
 }
