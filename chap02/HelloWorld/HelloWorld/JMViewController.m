@@ -65,8 +65,7 @@ NSURLRequest *req = [NSURLRequest requestWithURL:url];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:req];
     
-    [operation
-     setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSString *stringResponse = [[NSString alloc] initWithData:responseObject
                                                          encoding:NSUTF8StringEncoding];
@@ -87,7 +86,8 @@ NSURLRequest *req = [NSURLRequest requestWithURL:url];
 
 
 #pragma mark - NSURLConnection delegate methods
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
+- (void)connection:(NSURLConnection *)connection
+    didReceiveResponse:(NSURLResponse *)response{
     self.data = [NSMutableData data];
 }
 
