@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		077108B7E22F4A55B46C2950 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5D3E7BC8B8446F9CA497DE /* libPods.a */; };
+		64927AE6C78145909D25F422 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F2FBFFDCE46028AEC2315 /* libPods.a */; };
 		B91D4FEC16D69DD8002B2762 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91D4FEB16D69DD8002B2762 /* UIKit.framework */; };
 		B91D4FEE16D69DD8002B2762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91D4FED16D69DD8002B2762 /* Foundation.framework */; };
 		B91D4FF016D69DD8002B2762 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91D4FEF16D69DD8002B2762 /* CoreGraphics.framework */; };
@@ -26,16 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F5D3E7BC8B8446F9CA497DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C6AB691DEBC4DD8BE912EBA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		B91D4FE816D69DD8002B2762 /* StandardData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StandardData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A1F31CC04042FF9D404AD4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		22CEB2F60DB54BDCA9D807AA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9F2FBFFDCE46028AEC2315 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91D4FE816D69DD8002B2762 /* Comunities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comunities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91D4FEB16D69DD8002B2762 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B91D4FED16D69DD8002B2762 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B91D4FEF16D69DD8002B2762 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B91D4FF316D69DD8002B2762 /* StandardData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StandardData-Info.plist"; sourceTree = "<group>"; };
+		B91D4FF316D69DD8002B2762 /* Comunities-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Comunities-Info.plist"; sourceTree = "<group>"; };
 		B91D4FF516D69DD8002B2762 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B91D4FF716D69DD8002B2762 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B91D4FF916D69DD8002B2762 /* StandardData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StandardData-Prefix.pch"; sourceTree = "<group>"; };
+		B91D4FF916D69DD8002B2762 /* Comunities-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Comunities-Prefix.pch"; sourceTree = "<group>"; };
 		B91D4FFA16D69DD8002B2762 /* JMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMAppDelegate.h; sourceTree = "<group>"; };
 		B91D4FFB16D69DD8002B2762 /* JMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMAppDelegate.m; sourceTree = "<group>"; };
 		B91D4FFD16D69DD8002B2762 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -48,7 +49,7 @@
 		B91D500F16D6ADDD002B2762 /* JMProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMProvince.m; sourceTree = "<group>"; };
 		B91D501116D6AE58002B2762 /* JMComunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMComunity.h; sourceTree = "<group>"; };
 		B91D501216D6AE58002B2762 /* JMComunity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMComunity.m; sourceTree = "<group>"; };
-		B91D501416D77D03002B2762 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = StandardData/placeholder.png; sourceTree = "<group>"; };
+		B91D501416D77D03002B2762 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = Comunities/placeholder.png; sourceTree = "<group>"; };
 		B91D501616D77D4D002B2762 /* JMProvincesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMProvincesViewController.h; sourceTree = "<group>"; };
 		B91D501716D77D4D002B2762 /* JMProvincesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMProvincesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +62,7 @@
 				B91D4FEC16D69DD8002B2762 /* UIKit.framework in Frameworks */,
 				B91D4FEE16D69DD8002B2762 /* Foundation.framework in Frameworks */,
 				B91D4FF016D69DD8002B2762 /* CoreGraphics.framework in Frameworks */,
-				077108B7E22F4A55B46C2950 /* libPods.a in Frameworks */,
+				64927AE6C78145909D25F422 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,14 +76,14 @@
 				B91D4FF116D69DD8002B2762 /* StandardData */,
 				B91D4FEA16D69DD8002B2762 /* Frameworks */,
 				B91D4FE916D69DD8002B2762 /* Products */,
-				7C6AB691DEBC4DD8BE912EBA /* Pods.xcconfig */,
+				11A1F31CC04042FF9D404AD4 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		B91D4FE916D69DD8002B2762 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B91D4FE816D69DD8002B2762 /* StandardData.app */,
+				B91D4FE816D69DD8002B2762 /* Comunities.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +94,8 @@
 				B91D4FEB16D69DD8002B2762 /* UIKit.framework */,
 				B91D4FED16D69DD8002B2762 /* Foundation.framework */,
 				B91D4FEF16D69DD8002B2762 /* CoreGraphics.framework */,
-				0F5D3E7BC8B8446F9CA497DE /* libPods.a */,
+				22CEB2F60DB54BDCA9D807AA /* libPods.a */,
+				5A9F2FBFFDCE46028AEC2315 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,16 +113,17 @@
 				B91D501716D77D4D002B2762 /* JMProvincesViewController.m */,
 				B91D4FF216D69DD8002B2762 /* Supporting Files */,
 			);
-			path = StandardData;
+			name = StandardData;
+			path = Comunities;
 			sourceTree = "<group>";
 		};
 		B91D4FF216D69DD8002B2762 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B91D4FF316D69DD8002B2762 /* StandardData-Info.plist */,
+				B91D4FF316D69DD8002B2762 /* Comunities-Info.plist */,
 				B91D4FF416D69DD8002B2762 /* InfoPlist.strings */,
 				B91D4FF716D69DD8002B2762 /* main.m */,
-				B91D4FF916D69DD8002B2762 /* StandardData-Prefix.pch */,
+				B91D4FF916D69DD8002B2762 /* Comunities-Prefix.pch */,
 				B91D4FFD16D69DD8002B2762 /* Default.png */,
 				B91D4FFF16D69DD8002B2762 /* Default@2x.png */,
 				B91D500116D69DD8002B2762 /* Default-568h@2x.png */,
@@ -142,22 +145,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B91D4FE716D69DD8002B2762 /* StandardData */ = {
+		B91D4FE716D69DD8002B2762 /* Comunities */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B91D500B16D69DD8002B2762 /* Build configuration list for PBXNativeTarget "StandardData" */;
+			buildConfigurationList = B91D500B16D69DD8002B2762 /* Build configuration list for PBXNativeTarget "Comunities" */;
 			buildPhases = (
 				B91D4FE416D69DD8002B2762 /* Sources */,
 				B91D4FE516D69DD8002B2762 /* Frameworks */,
 				B91D4FE616D69DD8002B2762 /* Resources */,
 				7B360328F45E45DEBAB5CA48 /* Copy Pods Resources */,
+				DB82B0E317EE45B5B51841E8 /* Copy Pods Resources */,
+				4C8E45D359C0439C8440DD12 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StandardData;
+			name = Comunities;
 			productName = StandardData;
-			productReference = B91D4FE816D69DD8002B2762 /* StandardData.app */;
+			productReference = B91D4FE816D69DD8002B2762 /* Comunities.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +175,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Tactilapp.com;
 			};
-			buildConfigurationList = B91D4FE316D69DD8002B2762 /* Build configuration list for PBXProject "StandardData" */;
+			buildConfigurationList = B91D4FE316D69DD8002B2762 /* Build configuration list for PBXProject "Comunities" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B91D4FE716D69DD8002B2762 /* StandardData */,
+				B91D4FE716D69DD8002B2762 /* Comunities */,
 			);
 		};
 /* End PBXProject section */
@@ -204,7 +209,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C8E45D359C0439C8440DD12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		7B360328F45E45DEBAB5CA48 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		DB82B0E317EE45B5B51841E8 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,24 +347,28 @@
 		};
 		B91D500C16D69DD8002B2762 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6AB691DEBC4DD8BE912EBA /* Pods.xcconfig */;
+			baseConfigurationReference = 11A1F31CC04042FF9D404AD4 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StandardData/StandardData-Prefix.pch";
-				INFOPLIST_FILE = "StandardData/StandardData-Info.plist";
+				GCC_PREFIX_HEADER = "Comunities/Comunities-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Comunities/Comunities-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		B91D500D16D69DD8002B2762 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C6AB691DEBC4DD8BE912EBA /* Pods.xcconfig */;
+			baseConfigurationReference = 11A1F31CC04042FF9D404AD4 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "StandardData/StandardData-Prefix.pch";
-				INFOPLIST_FILE = "StandardData/StandardData-Info.plist";
+				GCC_PREFIX_HEADER = "Comunities/Comunities-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Comunities/Comunities-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -339,7 +376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B91D4FE316D69DD8002B2762 /* Build configuration list for PBXProject "StandardData" */ = {
+		B91D4FE316D69DD8002B2762 /* Build configuration list for PBXProject "Comunities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B91D500916D69DD8002B2762 /* Debug */,
@@ -348,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B91D500B16D69DD8002B2762 /* Build configuration list for PBXNativeTarget "StandardData" */ = {
+		B91D500B16D69DD8002B2762 /* Build configuration list for PBXNativeTarget "Comunities" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B91D500C16D69DD8002B2762 /* Debug */,
