@@ -18,7 +18,7 @@
 		B91D500016D69DD8002B2762 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B91D4FFF16D69DD8002B2762 /* Default@2x.png */; };
 		B91D500216D69DD8002B2762 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B91D500116D69DD8002B2762 /* Default-568h@2x.png */; };
 		B91D500516D69DD8002B2762 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91D500316D69DD8002B2762 /* MainStoryboard.storyboard */; };
-		B91D500816D69DD8002B2762 /* JMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91D500716D69DD8002B2762 /* JMViewController.m */; };
+		B91D500816D69DD8002B2762 /* JMComunitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B91D500716D69DD8002B2762 /* JMComunitiesViewController.m */; };
 		B91D501016D6ADDD002B2762 /* JMProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = B91D500F16D6ADDD002B2762 /* JMProvince.m */; };
 		B91D501316D6AE58002B2762 /* JMComunity.m in Sources */ = {isa = PBXBuildFile; fileRef = B91D501216D6AE58002B2762 /* JMComunity.m */; };
 		B91D501516D77D03002B2762 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B91D501416D77D03002B2762 /* placeholder.png */; };
@@ -43,8 +43,8 @@
 		B91D4FFF16D69DD8002B2762 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B91D500116D69DD8002B2762 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B91D500416D69DD8002B2762 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B91D500616D69DD8002B2762 /* JMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMViewController.h; sourceTree = "<group>"; };
-		B91D500716D69DD8002B2762 /* JMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMViewController.m; sourceTree = "<group>"; };
+		B91D500616D69DD8002B2762 /* JMComunitiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMComunitiesViewController.h; sourceTree = "<group>"; };
+		B91D500716D69DD8002B2762 /* JMComunitiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMComunitiesViewController.m; sourceTree = "<group>"; };
 		B91D500E16D6ADDD002B2762 /* JMProvince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMProvince.h; sourceTree = "<group>"; };
 		B91D500F16D6ADDD002B2762 /* JMProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMProvince.m; sourceTree = "<group>"; };
 		B91D501116D6AE58002B2762 /* JMComunity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMComunity.h; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 				B91D4FFA16D69DD8002B2762 /* JMAppDelegate.h */,
 				B91D4FFB16D69DD8002B2762 /* JMAppDelegate.m */,
 				B91D500316D69DD8002B2762 /* MainStoryboard.storyboard */,
-				B91D500616D69DD8002B2762 /* JMViewController.h */,
-				B91D500716D69DD8002B2762 /* JMViewController.m */,
+				B91D500616D69DD8002B2762 /* JMComunitiesViewController.h */,
+				B91D500716D69DD8002B2762 /* JMComunitiesViewController.m */,
 				B91D501616D77D4D002B2762 /* JMProvincesViewController.h */,
 				B91D501716D77D4D002B2762 /* JMProvincesViewController.m */,
 				B91D4FF216D69DD8002B2762 /* Supporting Files */,
@@ -260,7 +260,7 @@
 			files = (
 				B91D4FF816D69DD8002B2762 /* main.m in Sources */,
 				B91D4FFC16D69DD8002B2762 /* JMAppDelegate.m in Sources */,
-				B91D500816D69DD8002B2762 /* JMViewController.m in Sources */,
+				B91D500816D69DD8002B2762 /* JMComunitiesViewController.m in Sources */,
 				B91D501016D6ADDD002B2762 /* JMProvince.m in Sources */,
 				B91D501316D6AE58002B2762 /* JMComunity.m in Sources */,
 				B91D501816D77D4D002B2762 /* JMProvincesViewController.m in Sources */,

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JMViewController : UIViewController<NSXMLParserDelegate>
+@interface JMComunitiesViewController : UIViewController<NSXMLParserDelegate>
 
 @end
