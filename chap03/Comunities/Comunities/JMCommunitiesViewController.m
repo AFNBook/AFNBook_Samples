@@ -14,7 +14,7 @@
 
 #import "JMProvincesViewController.h"
 
-@interface JMCommunitiesViewController ()
+@interface JMCommunitiesViewController ()   
     @property (weak, nonatomic) IBOutlet UITableView *tableComunities;
 
     @property (nonatomic, strong) NSMutableArray *comunities;
