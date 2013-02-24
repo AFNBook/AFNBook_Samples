@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Tactilapp.com. All rights reserved.
 //
 
-#import "JMComunitiesViewController.h"
+#import "JMCommunitiesViewController.h"
 #import "AFNetworking.h"
 
 #import "JMComunity.h"
@@ -14,7 +14,7 @@
 
 #import "JMProvincesViewController.h"
 
-@interface JMComunitiesViewController ()
+@interface JMCommunitiesViewController ()
     @property (weak, nonatomic) IBOutlet UITableView *tableComunities;
 
     @property (nonatomic, strong) NSMutableArray *comunities;
@@ -23,7 +23,7 @@
     @property (nonatomic, strong) NSMutableString *tmpContent;
 @end
 
-@implementation JMComunitiesViewController
+@implementation JMCommunitiesViewController
 
 NSString * const sampleXML = @"http://afnbook.herokuapp.com/provincias.xml";
 
