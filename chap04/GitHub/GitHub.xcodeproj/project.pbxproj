@@ -1,0 +1,339 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F8526A78B6143F0BD2EFA6F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FECF217CA9D45C5AAC52669 /* libPods.a */; };
+		B93ADB2D16EFC35F0064F148 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93ADB2C16EFC35F0064F148 /* UIKit.framework */; };
+		B93ADB2F16EFC35F0064F148 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93ADB2E16EFC35F0064F148 /* Foundation.framework */; };
+		B93ADB3116EFC35F0064F148 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93ADB3016EFC35F0064F148 /* CoreGraphics.framework */; };
+		B93ADB3716EFC35F0064F148 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B93ADB3516EFC35F0064F148 /* InfoPlist.strings */; };
+		B93ADB3916EFC35F0064F148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB3816EFC35F0064F148 /* main.m */; };
+		B93ADB3D16EFC35F0064F148 /* JMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB3C16EFC35F0064F148 /* JMAppDelegate.m */; };
+		B93ADB3F16EFC35F0064F148 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B93ADB3E16EFC35F0064F148 /* Default.png */; };
+		B93ADB4116EFC35F0064F148 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93ADB4016EFC35F0064F148 /* Default@2x.png */; };
+		B93ADB4316EFC35F0064F148 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B93ADB4216EFC35F0064F148 /* Default-568h@2x.png */; };
+		B93ADB4616EFC35F0064F148 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93ADB4416EFC35F0064F148 /* MainStoryboard.storyboard */; };
+		B93ADB4916EFC35F0064F148 /* JMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB4816EFC35F0064F148 /* JMViewController.m */; };
+		B93ADB5116EFCA560064F148 /* JMGitHubAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB5016EFCA560064F148 /* JMGitHubAPIClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5FECF217CA9D45C5AAC52669 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44E7DFCB8BE408E986F1480 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B93ADB2916EFC35F0064F148 /* GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93ADB2C16EFC35F0064F148 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B93ADB2E16EFC35F0064F148 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B93ADB3016EFC35F0064F148 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B93ADB3416EFC35F0064F148 /* GitHub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GitHub-Info.plist"; sourceTree = "<group>"; };
+		B93ADB3616EFC35F0064F148 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B93ADB3816EFC35F0064F148 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B93ADB3A16EFC35F0064F148 /* GitHub-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitHub-Prefix.pch"; sourceTree = "<group>"; };
+		B93ADB3B16EFC35F0064F148 /* JMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMAppDelegate.h; sourceTree = "<group>"; };
+		B93ADB3C16EFC35F0064F148 /* JMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMAppDelegate.m; sourceTree = "<group>"; };
+		B93ADB3E16EFC35F0064F148 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B93ADB4016EFC35F0064F148 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B93ADB4216EFC35F0064F148 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B93ADB4516EFC35F0064F148 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B93ADB4716EFC35F0064F148 /* JMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMViewController.h; sourceTree = "<group>"; };
+		B93ADB4816EFC35F0064F148 /* JMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMViewController.m; sourceTree = "<group>"; };
+		B93ADB4F16EFCA560064F148 /* JMGitHubAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGitHubAPIClient.h; sourceTree = "<group>"; };
+		B93ADB5016EFCA560064F148 /* JMGitHubAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGitHubAPIClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B93ADB2616EFC35F0064F148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93ADB2D16EFC35F0064F148 /* UIKit.framework in Frameworks */,
+				B93ADB2F16EFC35F0064F148 /* Foundation.framework in Frameworks */,
+				B93ADB3116EFC35F0064F148 /* CoreGraphics.framework in Frameworks */,
+				8F8526A78B6143F0BD2EFA6F /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B93ADB2016EFC35F0064F148 = {
+			isa = PBXGroup;
+			children = (
+				B93ADB3216EFC35F0064F148 /* GitHub */,
+				B93ADB2B16EFC35F0064F148 /* Frameworks */,
+				B93ADB2A16EFC35F0064F148 /* Products */,
+				A44E7DFCB8BE408E986F1480 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B93ADB2A16EFC35F0064F148 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B93ADB2916EFC35F0064F148 /* GitHub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B93ADB2B16EFC35F0064F148 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B93ADB2C16EFC35F0064F148 /* UIKit.framework */,
+				B93ADB2E16EFC35F0064F148 /* Foundation.framework */,
+				B93ADB3016EFC35F0064F148 /* CoreGraphics.framework */,
+				5FECF217CA9D45C5AAC52669 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B93ADB3216EFC35F0064F148 /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				B93ADB3B16EFC35F0064F148 /* JMAppDelegate.h */,
+				B93ADB3C16EFC35F0064F148 /* JMAppDelegate.m */,
+				B93ADB4416EFC35F0064F148 /* MainStoryboard.storyboard */,
+				B93ADB4716EFC35F0064F148 /* JMViewController.h */,
+				B93ADB4816EFC35F0064F148 /* JMViewController.m */,
+				B93ADB4F16EFCA560064F148 /* JMGitHubAPIClient.h */,
+				B93ADB5016EFCA560064F148 /* JMGitHubAPIClient.m */,
+				B93ADB3316EFC35F0064F148 /* Supporting Files */,
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
+		B93ADB3316EFC35F0064F148 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B93ADB3416EFC35F0064F148 /* GitHub-Info.plist */,
+				B93ADB3516EFC35F0064F148 /* InfoPlist.strings */,
+				B93ADB3816EFC35F0064F148 /* main.m */,
+				B93ADB3A16EFC35F0064F148 /* GitHub-Prefix.pch */,
+				B93ADB3E16EFC35F0064F148 /* Default.png */,
+				B93ADB4016EFC35F0064F148 /* Default@2x.png */,
+				B93ADB4216EFC35F0064F148 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B93ADB2816EFC35F0064F148 /* GitHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93ADB4C16EFC35F0064F148 /* Build configuration list for PBXNativeTarget "GitHub" */;
+			buildPhases = (
+				B93ADB2516EFC35F0064F148 /* Sources */,
+				B93ADB2616EFC35F0064F148 /* Frameworks */,
+				B93ADB2716EFC35F0064F148 /* Resources */,
+				C624FCAA995D473389644426 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHub;
+			productName = GitHub;
+			productReference = B93ADB2916EFC35F0064F148 /* GitHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B93ADB2116EFC35F0064F148 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Tactilapp.com;
+			};
+			buildConfigurationList = B93ADB2416EFC35F0064F148 /* Build configuration list for PBXProject "GitHub" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B93ADB2016EFC35F0064F148;
+			productRefGroup = B93ADB2A16EFC35F0064F148 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B93ADB2816EFC35F0064F148 /* GitHub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B93ADB2716EFC35F0064F148 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93ADB3716EFC35F0064F148 /* InfoPlist.strings in Resources */,
+				B93ADB3F16EFC35F0064F148 /* Default.png in Resources */,
+				B93ADB4116EFC35F0064F148 /* Default@2x.png in Resources */,
+				B93ADB4316EFC35F0064F148 /* Default-568h@2x.png in Resources */,
+				B93ADB4616EFC35F0064F148 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C624FCAA995D473389644426 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B93ADB2516EFC35F0064F148 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93ADB3916EFC35F0064F148 /* main.m in Sources */,
+				B93ADB3D16EFC35F0064F148 /* JMAppDelegate.m in Sources */,
+				B93ADB4916EFC35F0064F148 /* JMViewController.m in Sources */,
+				B93ADB5116EFCA560064F148 /* JMGitHubAPIClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B93ADB3516EFC35F0064F148 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B93ADB3616EFC35F0064F148 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B93ADB4416EFC35F0064F148 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B93ADB4516EFC35F0064F148 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B93ADB4A16EFC35F0064F148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B93ADB4B16EFC35F0064F148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B93ADB4D16EFC35F0064F148 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44E7DFCB8BE408E986F1480 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitHub/GitHub-Prefix.pch";
+				INFOPLIST_FILE = "GitHub/GitHub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B93ADB4E16EFC35F0064F148 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44E7DFCB8BE408E986F1480 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GitHub/GitHub-Prefix.pch";
+				INFOPLIST_FILE = "GitHub/GitHub-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B93ADB2416EFC35F0064F148 /* Build configuration list for PBXProject "GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93ADB4A16EFC35F0064F148 /* Debug */,
+				B93ADB4B16EFC35F0064F148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B93ADB4C16EFC35F0064F148 /* Build configuration list for PBXNativeTarget "GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93ADB4D16EFC35F0064F148 /* Debug */,
+				B93ADB4E16EFC35F0064F148 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B93ADB2116EFC35F0064F148 /* Project object */;
+}
