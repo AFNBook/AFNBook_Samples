@@ -20,6 +20,10 @@
 		B93ADB4616EFC35F0064F148 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B93ADB4416EFC35F0064F148 /* MainStoryboard.storyboard */; };
 		B93ADB4916EFC35F0064F148 /* JMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB4816EFC35F0064F148 /* JMViewController.m */; };
 		B93ADB5116EFCA560064F148 /* JMGitHubAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB5016EFCA560064F148 /* JMGitHubAPIClient.m */; };
+		B93ADB5716EFD46E0064F148 /* JMRepoList.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB5616EFD46E0064F148 /* JMRepoList.m */; };
+		B93ADB5A16F076280064F148 /* JMFollowersList.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB5916F076280064F148 /* JMFollowersList.m */; };
+		B93ADB5D16F076350064F148 /* JMFollowingList.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB5C16F076350064F148 /* JMFollowingList.m */; };
+		B93ADB6016F077480064F148 /* JMWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = B93ADB5F16F077480064F148 /* JMWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,14 @@
 		B93ADB4816EFC35F0064F148 /* JMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMViewController.m; sourceTree = "<group>"; };
 		B93ADB4F16EFCA560064F148 /* JMGitHubAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGitHubAPIClient.h; sourceTree = "<group>"; };
 		B93ADB5016EFCA560064F148 /* JMGitHubAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGitHubAPIClient.m; sourceTree = "<group>"; };
+		B93ADB5516EFD46E0064F148 /* JMRepoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRepoList.h; sourceTree = "<group>"; };
+		B93ADB5616EFD46E0064F148 /* JMRepoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRepoList.m; sourceTree = "<group>"; };
+		B93ADB5816F076280064F148 /* JMFollowersList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFollowersList.h; sourceTree = "<group>"; };
+		B93ADB5916F076280064F148 /* JMFollowersList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFollowersList.m; sourceTree = "<group>"; };
+		B93ADB5B16F076350064F148 /* JMFollowingList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMFollowingList.h; sourceTree = "<group>"; };
+		B93ADB5C16F076350064F148 /* JMFollowingList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMFollowingList.m; sourceTree = "<group>"; };
+		B93ADB5E16F077480064F148 /* JMWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMWebView.h; sourceTree = "<group>"; };
+		B93ADB5F16F077480064F148 /* JMWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMWebView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,14 @@
 				B93ADB4816EFC35F0064F148 /* JMViewController.m */,
 				B93ADB4F16EFCA560064F148 /* JMGitHubAPIClient.h */,
 				B93ADB5016EFCA560064F148 /* JMGitHubAPIClient.m */,
+				B93ADB5516EFD46E0064F148 /* JMRepoList.h */,
+				B93ADB5616EFD46E0064F148 /* JMRepoList.m */,
+				B93ADB5816F076280064F148 /* JMFollowersList.h */,
+				B93ADB5916F076280064F148 /* JMFollowersList.m */,
+				B93ADB5B16F076350064F148 /* JMFollowingList.h */,
+				B93ADB5C16F076350064F148 /* JMFollowingList.m */,
+				B93ADB5E16F077480064F148 /* JMWebView.h */,
+				B93ADB5F16F077480064F148 /* JMWebView.m */,
 				B93ADB3316EFC35F0064F148 /* Supporting Files */,
 			);
 			path = GitHub;
@@ -207,6 +227,10 @@
 				B93ADB3D16EFC35F0064F148 /* JMAppDelegate.m in Sources */,
 				B93ADB4916EFC35F0064F148 /* JMViewController.m in Sources */,
 				B93ADB5116EFCA560064F148 /* JMGitHubAPIClient.m in Sources */,
+				B93ADB5716EFD46E0064F148 /* JMRepoList.m in Sources */,
+				B93ADB5A16F076280064F148 /* JMFollowersList.m in Sources */,
+				B93ADB5D16F076350064F148 /* JMFollowingList.m in Sources */,
+				B93ADB6016F077480064F148 /* JMWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

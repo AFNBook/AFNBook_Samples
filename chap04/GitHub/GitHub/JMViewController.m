@@ -9,7 +9,16 @@
 #import "JMViewController.h"
 
 #import "JMGitHubAPIClient.h"
+
+#import "JMRepoList.h"
+
 #import <AFNetworking/UIImageView+AFNetworking.h>
+
+
+static NSString * const kRepoSegue      = @"repo";
+static NSString * const kFollowingSegue   = @"following";
+static NSString * const kFollowersSegue = @"followers";
+
 
 @interface JMViewController ()
 
@@ -24,11 +33,21 @@
 
 @end
 
+
 @implementation JMViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    
+    // Allows to hide keyboard tapping on background
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)]];
 }
+
+-(void)hideKeyboard{
+    [self.nickname resignFirstResponder];
+}
+
+#pragma mark - Buttons on screen
 
 - (IBAction)loadUser {
     NSString *urlWithUser = [NSString stringWithFormat:@"users/%@", self.nickname.text];
@@ -38,17 +57,22 @@
          success:^(AFHTTPRequestOperation *operation, id responseObject) {
              [self loadInfo:responseObject];
          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-         
+             NSLog(@"Error:\n%@", error.localizedDescription);
          }
     ];
 }
 
 
 - (IBAction)loadRepos {
+    [self performSegueWithIdentifier:kRepoSegue sender:self];
 }
+
 - (IBAction)loadFollowers {
+    [self performSegueWithIdentifier:kFollowersSegue sender:self];
 }
+
 - (IBAction)loadFollowing {
+    [self performSegueWithIdentifier:kFollowingSegue sender:self];
 }
 
 -(void)loadInfo:(NSDictionary *)responseDict{
@@ -66,4 +90,12 @@
     [self.followersButton setTitle:followersStr forState:UIControlStateNormal];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:kRepoSegue]){
+        JMRepoList *repoList = segue.destinationViewController;
+        repoList.nickname = self.nickname.text;
+    }else if ([segue.identifier isEqualToString:kRepoSegue]){
+        
+    }
+}
 @end
