@@ -11,7 +11,8 @@
 #import "JMGitHubAPIClient.h"
 #import "JMWebView.h"
 
-static NSString * const kWebSegue      = @"loadWeb";
+
+static NSString * const kWebSegue = @"loadWeb";
 
 @interface JMRepoList()
 

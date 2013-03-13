@@ -138,8 +138,8 @@
                         <outlet property="nickname" destination="ZJc-aE-CTp" id="pwk-ql-I4a"/>
                         <outlet property="reposButton" destination="PcD-y8-yaS" id="jpI-Ej-p4x"/>
                         <segue destination="PZ9-Ph-1VA" kind="push" identifier="repo" id="0Hf-sS-1bV"/>
-                        <segue destination="TVM-Zh-gEX" kind="push" identifier="following" id="ePe-ML-KcD"/>
-                        <segue destination="3Cc-yb-3jY" kind="push" id="sfY-6u-Ltk"/>
+                        <segue destination="TVM-Zh-gEX" kind="push" identifier="followers" id="ePe-ML-KcD"/>
+                        <segue destination="3Cc-yb-3jY" kind="push" identifier="following" id="sfY-6u-Ltk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>

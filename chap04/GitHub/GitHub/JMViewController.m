@@ -11,6 +11,8 @@
 #import "JMGitHubAPIClient.h"
 
 #import "JMRepoList.h"
+#import "JMFollowersList.h"
+#import "JMFollowingList.h"
 
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
@@ -37,6 +39,7 @@ static NSString * const kFollowersSegue = @"followers";
 @implementation JMViewController
 
 - (void)viewDidLoad{
+    self.title = @"GitHub";
     [super viewDidLoad];
     
     // Allows to hide keyboard tapping on background
@@ -93,9 +96,17 @@ static NSString * const kFollowersSegue = @"followers";
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:kRepoSegue]){
         JMRepoList *repoList = segue.destinationViewController;
+        repoList.title = @"Repositories";
         repoList.nickname = self.nickname.text;
-    }else if ([segue.identifier isEqualToString:kRepoSegue]){
-        
+    }else if ([segue.identifier isEqualToString:kFollowersSegue]){
+        JMFollowersList *followersList = segue.destinationViewController;
+        followersList.title = @"Followers";
+        followersList.nickname = self.nickname.text;
+    }else if([segue.identifier isEqualToString:kFollowingSegue]){
+        JMFollowingList *followingList = segue.destinationViewController;
+        followingList.title = @"Following";
+        followingList.nickname = self.nickname.text;
     }
 }
+
 @end
