@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JMViewController : UIViewController
+@interface JMViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @end
