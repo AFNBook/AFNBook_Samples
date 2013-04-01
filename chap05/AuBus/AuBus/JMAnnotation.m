@@ -20,6 +20,6 @@
 }
 
 -(NSString *)title{
-    return [NSString stringWithFormat:@"Line %i", self.line];
+    return [NSString stringWithFormat:@"Stop %i", self.line];
 }
 @end

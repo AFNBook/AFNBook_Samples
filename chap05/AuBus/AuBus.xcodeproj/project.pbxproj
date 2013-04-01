@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		522DF89F4B2A4A1A8AD952FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 792EC3AA94824504AC12DB86 /* libPods.a */; };
+		B91B3B7517073C33000FBF27 /* NSString+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = B91B3B7417073C33000FBF27 /* NSString+AFNetworking.m */; };
 		B99DFB241706387700B3FE1C /* JMAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B99DFB231706387700B3FE1C /* JMAnnotation.m */; };
 		B99DFB2717063B6600B3FE1C /* JMArrival.m in Sources */ = {isa = PBXBuildFile; fileRef = B99DFB2617063B6600B3FE1C /* JMArrival.m */; };
 		B9A1DEB817037DB1005A67C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A1DEB717037DB1005A67C6 /* UIKit.framework */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		17435D4F21A749DF8D52C488 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		792EC3AA94824504AC12DB86 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B91B3B7317073C33000FBF27 /* NSString+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AFNetworking.h"; sourceTree = "<group>"; };
+		B91B3B7417073C33000FBF27 /* NSString+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AFNetworking.m"; sourceTree = "<group>"; };
 		B99DFB221706387700B3FE1C /* JMAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMAnnotation.h; sourceTree = "<group>"; };
 		B99DFB231706387700B3FE1C /* JMAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMAnnotation.m; sourceTree = "<group>"; };
 		B99DFB2517063B6600B3FE1C /* JMArrival.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMArrival.h; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 				B99DFB231706387700B3FE1C /* JMAnnotation.m */,
 				B99DFB2517063B6600B3FE1C /* JMArrival.h */,
 				B99DFB2617063B6600B3FE1C /* JMArrival.m */,
+				B91B3B7317073C33000FBF27 /* NSString+AFNetworking.h */,
+				B91B3B7417073C33000FBF27 /* NSString+AFNetworking.m */,
 			);
 			path = AuBus;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 				B9A1DED417037DB1005A67C6 /* JMViewController.m in Sources */,
 				B99DFB241706387700B3FE1C /* JMAnnotation.m in Sources */,
 				B99DFB2717063B6600B3FE1C /* JMArrival.m in Sources */,
+				B91B3B7517073C33000FBF27 /* NSString+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

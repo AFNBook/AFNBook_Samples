@@ -16,7 +16,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="266"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="870" minimumValue="870" maximumValue="880" id="tkZ-lc-VYQ">
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="871" minimumValue="870" maximumValue="880" id="tkZ-lc-VYQ">
                                 <rect key="frame" x="218" y="6" width="94" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -37,6 +37,7 @@
                     </view>
                     <connections>
                         <outlet property="map" destination="1rs-A1-uiY" id="C10-fO-u9R"/>
+                        <outlet property="stepper" destination="tkZ-lc-VYQ" id="CFi-xF-y7q"/>
                         <outlet property="table" destination="FIf-0V-gn1" id="SAB-wz-ocA"/>
                     </connections>
                 </viewController>
@@ -51,6 +52,7 @@
             <relationships>
                 <relationship kind="action" name="valueChanged:" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="stepper" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="table" candidateClass="UITableView"/>
             </relationships>
         </class>

@@ -13,28 +13,22 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MKMapView+ZoomLevel.h>
+
+#import "NSString+AFNetworking.h"
 #import "JMAnnotation.h"
 #import "JMArrival.h"
 
 #define uBUS @"http://www.auvasa.es/parada.asp"
 
-@interface NSString(AFNBook)
-    -(NSString *)removeString:(NSString *)str;
-@end
-
-@implementation NSString(AFNBook)
-    -(NSString *)removeString:(NSString *)str{
-        return [self stringByReplacingOccurrencesOfString:str withString:@""];
-    }
-@end
-
 @interface JMViewController (){
     int lineNumber;
 }
+
 @property (weak, nonatomic) IBOutlet MKMapView *map;
 @property (weak, nonatomic) IBOutlet UITableView *table;
-@property (nonatomic,strong) NSMutableArray *arrivals;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
 
+@property (nonatomic,strong) NSMutableArray *arrivals;
 @end
 
 @implementation JMViewController
@@ -45,7 +39,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     
-    [self loadBusLine:870];
+    [self loadBusLine:(int)self.stepper.value];
 }
 
 -(void)loadBusLine:(int)line{

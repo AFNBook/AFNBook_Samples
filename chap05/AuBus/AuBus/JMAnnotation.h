@@ -10,8 +10,10 @@
 #import <MapKit/MapKit.h>
 
 @interface JMAnnotation : NSObject<MKAnnotation>
-    @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
-    @property (nonatomic, assign) int line;
+
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property (nonatomic, assign) int line;
 
 - (id) initWithCoordinate:(CLLocationCoordinate2D)coord line:(int)line;
+
 @end
