@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ASIHTTPRequest.h"
+#import "AFHTTPRequestOperation+ASIHTTPRequest.h"
+#import "ASIHTTPRequestDelegate.h"
 
 @interface JMViewController : UIViewController<ASIHTTPRequestDelegate>
 

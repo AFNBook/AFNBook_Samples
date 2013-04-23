@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B18B2CD177CD42A58040A519 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3ED410A4C524439B3094529 /* libPods.a */; };
 		B9CFD0591725A54600955093 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CFD0581725A54600955093 /* UIKit.framework */; };
 		B9CFD05B1725A54600955093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CFD05A1725A54600955093 /* Foundation.framework */; };
 		B9CFD05D1725A54600955093 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CFD05C1725A54600955093 /* CoreGraphics.framework */; };
@@ -31,9 +32,11 @@
 		B9CFD0A11725A67800955093 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CFD0871725A56E00955093 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B9CFD0A21725A67800955093 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CFD08B1725A56E00955093 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B9CFD0A31725A67800955093 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CFD08D1725A56E00955093 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B9CFD0A91726A2BF00955093 /* AFHTTPRequestOperation+ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CFD0A81726A2BF00955093 /* AFHTTPRequestOperation+ASIHTTPRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3ED410A4C524439B3094529 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CFD0551725A54600955093 /* ASIHTTPtoAFN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASIHTTPtoAFN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CFD0581725A54600955093 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9CFD05A1725A54600955093 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +79,9 @@
 		B9CFD0961725A61300955093 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B9CFD0981725A61A00955093 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B9CFD09A1725A63900955093 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B9CFD0A71726A2BF00955093 /* AFHTTPRequestOperation+ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperation+ASIHTTPRequest.h"; sourceTree = "<group>"; };
+		B9CFD0A81726A2BF00955093 /* AFHTTPRequestOperation+ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperation+ASIHTTPRequest.m"; sourceTree = "<group>"; };
+		CA8572AE1C8946E9BAD2A90A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 				B9CFD0951725A60B00955093 /* CFNetwork.framework in Frameworks */,
 				B9CFD0591725A54600955093 /* UIKit.framework in Frameworks */,
 				B9CFD05B1725A54600955093 /* Foundation.framework in Frameworks */,
+				B18B2CD177CD42A58040A519 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +106,13 @@
 		B9CFD04C1725A54600955093 = {
 			isa = PBXGroup;
 			children = (
+				B9CFD0A71726A2BF00955093 /* AFHTTPRequestOperation+ASIHTTPRequest.h */,
+				B9CFD0A81726A2BF00955093 /* AFHTTPRequestOperation+ASIHTTPRequest.m */,
 				B9CFD0931725A58000955093 /* ASIHTTPRequest */,
 				B9CFD05E1725A54600955093 /* ASIHTTPtoAFN */,
 				B9CFD0571725A54600955093 /* Frameworks */,
 				B9CFD0561725A54600955093 /* Products */,
+				CA8572AE1C8946E9BAD2A90A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +134,7 @@
 				B9CFD0581725A54600955093 /* UIKit.framework */,
 				B9CFD05A1725A54600955093 /* Foundation.framework */,
 				B9CFD05C1725A54600955093 /* CoreGraphics.framework */,
+				B3ED410A4C524439B3094529 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9CFD0781725A54600955093 /* Build configuration list for PBXNativeTarget "ASIHTTPtoAFN" */;
 			buildPhases = (
+				36E4D3E599BF439ABC7C1274 /* Check Pods Manifest.lock */,
 				B9CFD0511725A54600955093 /* Sources */,
 				B9CFD0521725A54600955093 /* Frameworks */,
 				B9CFD0531725A54600955093 /* Resources */,
+				D4D4984B0B54447B93330253 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +267,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36E4D3E599BF439ABC7C1274 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		D4D4984B0B54447B93330253 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9CFD0511725A54600955093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -271,6 +315,7 @@
 				B9CFD0A11725A67800955093 /* ASIHTTPRequest.m in Sources */,
 				B9CFD0A21725A67800955093 /* ASIInputStream.m in Sources */,
 				B9CFD0A31725A67800955093 /* ASINetworkQueue.m in Sources */,
+				B9CFD0A91726A2BF00955093 /* AFHTTPRequestOperation+ASIHTTPRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +399,7 @@
 		};
 		B9CFD0791725A54600955093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8572AE1C8946E9BAD2A90A /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASIHTTPtoAFN/ASIHTTPtoAFN-Prefix.pch";
@@ -365,6 +411,7 @@
 		};
 		B9CFD07A1725A54600955093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA8572AE1C8946E9BAD2A90A /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASIHTTPtoAFN/ASIHTTPtoAFN-Prefix.pch";
@@ -393,6 +440,7 @@
 				B9CFD07A1725A54600955093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
